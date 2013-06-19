@@ -5,6 +5,13 @@ Magento extension to add a warning icon when a config setting is set at a lower 
 
 ![ConfigScopeWarning screenshot](https://raw.github.com/dannynimmo/magento-ConfigScopeWarning/master/screenshot.png)
 
+Todo
+----
+
+- Show only scopes lower than current scope
+- Animate tooltip
+- Actually test
+
 Changelog
 ---------
 
