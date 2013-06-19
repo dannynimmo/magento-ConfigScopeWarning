@@ -1,0 +1,21 @@
+<config>
+    <modules>
+        <DannyNimmo_ConfigScopeWarning>
+            <version>0.1.0</version>
+        </DannyNimmo_ConfigScopeWarning>
+    </modules>
+    <global>
+        <helpers>
+            <dannynimmo_configscopewarning>
+                <class>DannyNimmo_ConfigScopeWarning_Helper</class>
+            </dannynimmo_configscopewarning>
+        </helpers>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <system_config_form>DannyNimmo_ConfigScopeWarning_Block_System_Config_Form</system_config_form>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+</config>

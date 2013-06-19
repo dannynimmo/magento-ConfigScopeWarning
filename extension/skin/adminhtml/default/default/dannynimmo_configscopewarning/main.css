@@ -1,0 +1,16 @@
+.scope-warning {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    margin-left: 5px;
+    vertical-align: top;
+    background: url('../images/warning_msg_icon.gif') no-repeat;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+.scope-warning:before {
+    display: block;
+    width: 0;
+    height: 150%;
+    content: "";
+}

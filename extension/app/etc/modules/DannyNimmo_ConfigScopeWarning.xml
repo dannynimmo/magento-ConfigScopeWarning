@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <DannyNimmo_ConfigScopeWarning>
+            <active>true</active>
+            <codePool>community</codePool>
+        </DannyNimmo_ConfigScopeWarning>
+    </modules>
+</config>
