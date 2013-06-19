@@ -12,6 +12,7 @@ class DannyNimmo_ConfigScopeWarning_Block_System_Config_Form extends Mage_Adminh
 
     protected function _prepareLayout() {
         $this->getLayout()->getBlock('head')->addCss('dannynimmo_configscopewarning/main.css');
+        $this->getLayout()->getBlock('head')->addItem('skin_js', 'dannynimmo_configscopewarning/main.js');
         return parent::_prepareLayout();
     }
 

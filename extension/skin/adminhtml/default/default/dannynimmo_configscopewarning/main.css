@@ -1,16 +1,38 @@
 .scope-warning {
+    position: relative;
     display: inline-block;
     width: 16px;
     height: 18px;
     margin-left: 5px;
     vertical-align: top;
     background: url('../images/warning_msg_icon.gif') no-repeat;
-    overflow: hidden;
-    *text-indent: -9999px;
 }
-.scope-warning:before {
+.scope-warning-message {
+    position: absolute;
+    bottom: 24px;
+    right: -77px;
+    display: none;
+    width: 150px;
+    padding: 10px;
+    line-height: 1.2;
+    background-color: #fffbf0;
+    border: solid 1px #ffd967;
+}
+.scope-warning-message.active {
     display: block;
-    width: 0;
-    height: 150%;
-    content: "";
+}
+.scope-warning-message h6 {
+    margin-bottom: 5px;
+}
+.scope-warning-message dd + dt {
+    margin-top: 4px;
+}
+.scope-warning-message dt::after {
+    content: "\3a\a0";
+}
+.scope-warning-message dd {
+    padding-left: 4px;
+}
+.scope-warning-message dd::before {
+    content: "\2022\a0";
 }

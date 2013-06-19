@@ -48,29 +48,24 @@ class DannyNimmo_ConfigScopeWarning_Helper_Data extends Mage_Core_Helper_Abstrac
         $overrides = $this->getOverrides();
         if($overrides) {
 
+            $message = '<h6>'. $this->__('Config Overridden') . '</h6>';
+
+            $message .= '<dl>';
             if($overrides->websites) {
-                $title = $this->__('Websites') . ': ';
+                $message .= '<dt>' . $this->__('Websites') . '</dt>';
                 foreach($overrides->websites as $website) {
-                    $title .= $website . ', ';
+                    $message .= '<dd>' . $website . '</dd>';
                 }
-                $title = rtrim($title, ', ');
             }
-
-            if(isset($title)) {
-                $title .= '; ';
-            } else {
-                $title = '';
-            }
-
             if($overrides->stores) {
-                $title .= $this->__('Stores') . ': ';
+                $message .= '<dt>' . $this->__('Stores') . '</dt>';
                 foreach($overrides->stores as $store) {
-                    $title .= $store . ', ';
+                    $message .= '<dd>' . $store . '</dd>';
                 }
-                $title = rtrim($title, ', ');
             }
+            $message .= '</dl>';
 
-            $markup = '<i class="scope-warning" title="' . $title . '">' . $this->__('Scope warning') . '</i>';
+            $markup = '<div class="scope-warning"><div class="scope-warning-message">'.$message.'</div></div>';
             return $markup;
         }
         return '';
